@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="resume.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html"><i class="logo fas fa-server"></i></a>
+        <div class="menu">
+            <span class="unit" ><a href="index.html">Home</a></span>
+            <span class="unit"><a href="resume.html" >Resume</a></span>
+            <span class="unit" ><a href="port.html">Portfolio</a></span>
+        </div>
+        <div class="main">Resume</div>
+       <div class="first-block text">
+           <h2>Hi! My name Is Yerzhan </h2>
+           <h3>I was born in Nur-Sultan And I have some abilities in programming and writing something that is difficult to understand</h3>
+           <h3>If you are reading that tekst I say last time it is your last chance to left this page)</h3>
+       </div>
+       <div class="stat" >
+           
+        <canvas id="myChart"  ></canvas>
+        <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels : ['CSS','JS','HTML'],
+                datasets: [{
+                    weight : 1 ,
+                    data: [8,4,7    ],
+                    offset : 1,
+                    borderColor: [
+                        'rgba(140, 40, 0)',
+                        'rgba(133, 70, 1)',
+                        'rgba(94, 9, 9)'
+                    ],
+                    rotation:50,
+                    hoverBorderColor: 'rgba(112, 45, 36)',
+                    circumference : 360,
+                    
+                    borderWidth: 4  ,
+                    hoverOffset : 6
+                }]
+            },
+           
+        });
+        </script>
+       </div>
+       <div class="stat_2" >
+           
+        <canvas id="myChart_2"  ></canvas>
+        <script>
+        var ctx = document.getElementById('myChart_2');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels : ['Kazakh','Russian','Turkish','English'],
+                datasets: [{
+                    label: 'Languages',
+                    weight : 1 ,
+                    data: [10,8,5,6],
+                    offset : 1,
+                    borderColor: [
+                        'rgba(191, 120, 57)',
+                        'rgba(133, 70, 1)',
+                        'rgba(143, 88, 29)',
+                        'rgba(112, 49, 3)'
+                    ],
+                    hoverBorderColor: 'rgba(112, 45, 36)',
+                    circumference : 360,
+                    
+                    borderWidth: 4  ,
+                    hoverOffset : 6
+                }]
+            },
+           
+        });
+        </script>
+       </div>
+    </div>
+    <div class="second-block text">
+        <h2>Welcome to My site!!</h2>
+        <h3>I write this site to challenge myself and imptove my coding skills</h3>
+        <h3>If you think that it was easy you do not realize how its hard to write something like that from zero</h3>
+    </div>
+    <div class="third-block text">
+        <h2>About My Education</h2>
+        <h3>School - Kazakh Turkish high School for gifted boys Taraz</h3>
+        <h3>University - Suleiman Demirel University</h3>
+        <h3>Skills - diligent , open to new information and experience and Stubborn</h3>
+    </div>
+    <div class="fourth-block text">
+       <h2> LANGUAGES! </h2>
+         <h2>English - approximately Intermadiate or Upper Between THEm</h2>
+       <h2> Russian - Upper Intermadiate</h2>
+        <h2>KAzaKh - Advanced </h2>
+        <h2>Turkish - Pre-Intermediate</h2>
+    </div>
+    <div class="last-block text">
+        <h2>Comleted High school with Red Diplom </h2>
+        <h2>Social skills and knowledge in Psychology</h2>
+        <h2>Friendly and Love aniMe )</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/1a84f1044a.js" crossorigin="anonymous"></script>
+</body>
+</html>
